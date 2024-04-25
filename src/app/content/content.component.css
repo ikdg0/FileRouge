@@ -1,0 +1,11 @@
+.actif {
+    color: green;
+}
+
+.inactif {
+    color: red;
+}
+
+.en-alerte {
+    color: orange;
+}
