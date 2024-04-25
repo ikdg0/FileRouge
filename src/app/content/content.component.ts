@@ -39,7 +39,7 @@ export class ContentComponent {
   logs: string[] = [];
 
   toggleStatut(salle: any) {
-    if (salle.statut === 'ouverte') {
+    if (salle.statut === 'Ouverte') {
       salle.statut = 'Fermée';
       salle.forcerClose = true;
       this.logs.push(`La ${salle.nom} a été fermée.`);
@@ -70,13 +70,13 @@ export class ContentComponent {
       fermeture.setHours(fermetureHour, fermetureMinutes);
 
       if (currentTime >= ouverture && currentTime <= fermeture && salle.forcerClose ===false) {
-        if (salle.statut !== 'ouverte') { 
-          salle.statut = 'ouverte';
+        if (salle.statut !== 'Ouverte') { 
+          salle.statut = 'Ouverte';
           this.logs.push(`La ${salle.nom} a été ouverte automatiquement à ${this.formatTime(currentHour, currentMinutes)}.`);
         }
       } else {
-        if (salle.statut !== 'fermée' && salle.forcerClose ===false) { 
-          salle.statut = 'fermée';
+        if (salle.statut !== 'Fermée' && salle.forcerClose ===false) { 
+          salle.statut = 'Fermée';
           this.logs.push(`La ${salle.nom} a été fermée automatiquement à ${this.formatTime(currentHour, currentMinutes)}.`);
         }
       }
