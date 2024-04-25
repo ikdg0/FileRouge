@@ -16,11 +16,11 @@ export class ContentComponent {
     },
     {
       nom: "SDB", ouverture: "08:00",
-      fermeture: "22:00", statut: "Fermée", forcerClose : false, image: "https://media.licdn.com/dms/image/D5603AQGoKKMdNeTQ9A/profile-displayphoto-shrink_800_800/0/1690446623763?e=2147483647&v=beta&t=n8YkWiNesgx_62gRykoPI5xLCCUit1OXTjMkPH4ErcU"
+      fermeture: "22:00", statut: "Fermée", forcerClose : true, image: "https://media.licdn.com/dms/image/D5603AQGoKKMdNeTQ9A/profile-displayphoto-shrink_800_800/0/1690446623763?e=2147483647&v=beta&t=n8YkWiNesgx_62gRykoPI5xLCCUit1OXTjMkPH4ErcU"
     },
     {
       nom: "Garage", ouverture: "08:00",
-      fermeture: "22:00", statut: "Ouverte",forcerClose : false, image: "https://www.socoren.com/wp-content/uploads/2022/12/creation-maison-sur-mesure.jpg"
+      fermeture: "22:00", statut: "Problème",forcerClose : true, image: "https://www.socoren.com/wp-content/uploads/2022/12/creation-maison-sur-mesure.jpg"
     },
     {
       nom: "PAC", ouverture: "08:00",
@@ -32,7 +32,7 @@ export class ContentComponent {
     },
     {
       nom: "Piscine", ouverture: "08:00",
-      fermeture: "22:00", statut: "Fermée",forcerClose : false, image: "https://www.aquilus-piscines.com/wp-content/uploads/2021/12/petite-piscine-dans-le-finistere-3.png"
+      fermeture: "22:00", statut: "Ouverte",forcerClose : false, image: "https://www.aquilus-piscines.com/wp-content/uploads/2021/12/petite-piscine-dans-le-finistere-3.png"
     }
   ];
 
