@@ -1,11 +1,11 @@
-import { Component, OnDestroy, OnInit, input, output, EventEmitter, Output } from '@angular/core';
+import { Component, OnDestroy, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-timer',
   templateUrl: './timer.component.html',
-  styleUrl: './timer.component.css'
+  styleUrls: ['./timer.component.css']
 })
-export class TimerComponent {
+export class TimerComponent implements OnInit, OnDestroy {
   @Output() timeChanged = new EventEmitter<Date>();
   time: Date = new Date();
 

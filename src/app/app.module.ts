@@ -7,16 +7,17 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { TimerComponent } from './timer/timer.component';
+import { ChatComponent } from './chat/chat.component';
 import { FormsModule } from '@angular/forms';
 
-FormsModule
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    TimerComponent
+    TimerComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
